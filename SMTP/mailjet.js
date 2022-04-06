@@ -29,9 +29,9 @@ const request = mailjet.post('send', {'version': 'v3.1'})
     ]
 });
 
-// request.then(res => {
-//     console.log(res.body);
-// })
-// .catch(err => {
-//     console.log(err.statusCode);
-// });
+ request.then(res => {
+     console.log(res.body);
+ })
+ .catch(err => {
+     console.log(err.statusCode);
+ });
